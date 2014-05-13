@@ -3,6 +3,10 @@ EqHash
 
 The one Java class / method you need to test your objects' `equals()` and `hashCode()` methods.
 
+* Save boilerplate code
+* Get **code coverage** closer to 100%
+* Best of all, get better mutation testing scores when using [PIT](http://pitest.org/) et al.
+
 ```java
 public class EqHashTest {
 
