@@ -84,7 +84,7 @@
 					<includes>
 						<include>**/*</include>
 					</includes>
-					<repositoryName>resourceBundleStore</repositoryName>      <!-- github repo name -->
+					<repositoryName>EqHash</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>poblish</repositoryOwner>    <!-- github username -->
 				</configuration>
 				<executions>
