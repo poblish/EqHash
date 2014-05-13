@@ -35,3 +35,5 @@ public class EqHashTest {
     }
 
 ```
+
+[![Build Status](https://travis-ci.org/poblish/EqHash.svg?branch=master)](https://travis-ci.org/poblish/EqHash)
