@@ -1,5 +1,7 @@
 EqHash
-=======
+======
+
+[![Build Status](https://travis-ci.org/poblish/EqHash.svg?branch=master)](https://travis-ci.org/poblish/EqHash)  [![codecov.io](https://codecov.io/github/poblish/EqHash/coverage.svg?branch=master)](https://codecov.io/github/poblish/EqHash?branch=master)
 
 The one Java class / method you need to test your objects' `equals()` and `hashCode()` methods.
 
@@ -35,5 +37,3 @@ public class EqHashTest {
     }
 
 ```
-
-[![Build Status](https://travis-ci.org/poblish/EqHash.svg?branch=master)](https://travis-ci.org/poblish/EqHash)
