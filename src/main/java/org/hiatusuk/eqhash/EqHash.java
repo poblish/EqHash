@@ -1,4 +1,4 @@
-package com.hiatus.eqhash;
+package org.hiatusuk.eqhash;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

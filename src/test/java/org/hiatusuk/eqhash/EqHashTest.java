@@ -1,7 +1,8 @@
-package com.hiatus.eqhash;
+package org.hiatusuk.eqhash;
 
 import java.util.Arrays;
 
+import org.hiatusuk.eqhash.EqHash;
 import org.testng.annotations.Test;
 
 import com.google.common.base.Objects;
