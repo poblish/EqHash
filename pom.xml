@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hiatusuk</groupId>
     <artifactId>eqHash</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
     <name>EqHash</name>
     <description>The one Java class / method you need to test your objects' equals() and hashCode() methods</description>
 
