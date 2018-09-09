@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hiatusuk</groupId>
     <artifactId>eqHash</artifactId>
-    <version>1.0.6-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>EqHash</name>
     <description>The one Java class / method you need to test your objects' equals() and hashCode() methods</description>
 
@@ -119,8 +119,23 @@
                 <autoReleaseAfterClose>true</autoReleaseAfterClose>
             </configuration>
         </plugin>
-          
-          <plugin>
+
+           <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-gpg-plugin</artifactId>
+               <version>1.6</version>
+               <executions>
+                   <execution>
+                       <id>sign-artifacts</id>
+                       <phase>verify</phase>
+                       <goals>
+                           <goal>sign</goal>
+                       </goals>
+                   </execution>
+               </executions>
+           </plugin>
+
+           <plugin>
              <groupId>org.jacoco</groupId>
              <artifactId>jacoco-maven-plugin</artifactId>
              <version>0.7.5.201505241946</version>
@@ -143,33 +158,9 @@
        <defaultGoal>clean install</defaultGoal>
     </build>
 
-    <profiles>
-      <profile>
-         <id>release-sign-artifacts</id>
-         <activation>
-             <property>
-                <name>performRelease</name>
-                <value>true</value>
-             </property>
-         </activation>
-         <build>
-             <plugins>
-                <plugin>
-                     <groupId>org.apache.maven.plugins</groupId>
-                     <artifactId>maven-gpg-plugin</artifactId>
-                     <version>1.6</version>
-                     <executions>
-                        <execution>
-                             <id>sign-artifacts</id>
-                             <phase>verify</phase>
-                             <goals>
-                                <goal>sign</goal>
-                             </goals>
-                        </execution>
-                     </executions>
-                </plugin>
-             </plugins>
-         </build>
-      </profile>
-    </profiles>
+    <developers>
+        <developer>
+            <name>Andrew Regan</name>
+        </developer>
+    </developers>
 </project>
