@@ -25,9 +25,9 @@ public class EqHashTest {
     }
 
     private static class TestContainer {
-        private int x;
-        private String y;
-        private byte[] z;
+        private final int x;
+        private final String y;
+        private final byte[] z;
 
         TestContainer(int x, String y, byte[] z) {
             this.x = x;

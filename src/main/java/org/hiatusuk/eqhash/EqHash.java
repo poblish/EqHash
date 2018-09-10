@@ -25,7 +25,7 @@ public final class EqHash {
      * @param inCopy another instance that you assert is a copy of inObj
      * @param inDifferentObjects an array of objects you assert are all different from inObj
      */
-    @SuppressWarnings({ "unchecked", "rawtypes" })
+    @SuppressWarnings({"unchecked", "rawtypes", "ConstantConditions"})
     public static void testEqualsHashcode( final Object inObj, final Object inCopy, final Object... inDifferentObjects)
     {
         // First up, check the types match...
