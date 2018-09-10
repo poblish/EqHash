@@ -13,6 +13,7 @@ import java.util.Set;
  * 
  * @author Andrew Regan
  */
+@SuppressWarnings("RedundantCast")
 public final class EqHash {
 
     private EqHash() {}
@@ -39,8 +40,7 @@ public final class EqHash {
         assertThat( "Source.hashCode() should equal itself", inObj.hashCode(), equalTo( inObj.hashCode() ));
         assertThat( "Source.hashCode() should equal the Copy.hashCode()", inObj.hashCode(), equalTo( inCopy.hashCode() ));
 
-        final Set<Object> diffObjects = new HashSet<Object>();
-        diffObjects.addAll( Arrays.asList(inDifferentObjects) );
+        final Set<Object> diffObjects = new HashSet<>( Arrays.asList(inDifferentObjects) );
         assertThat( "Duplicate Different objects are present: counts differ", inDifferentObjects.length, is(diffObjects.size()));
 
         for ( Object eachDiffObject : inDifferentObjects) {

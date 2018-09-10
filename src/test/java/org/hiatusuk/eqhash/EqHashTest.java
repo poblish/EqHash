@@ -1,11 +1,9 @@
 package org.hiatusuk.eqhash;
 
 import java.util.Arrays;
+import java.util.Objects;
 
-import org.hiatusuk.eqhash.EqHash;
 import org.testng.annotations.Test;
-
-import com.google.common.base.Objects;
 
 public class EqHashTest {
 
@@ -31,7 +29,7 @@ public class EqHashTest {
         private String y;
         private byte[] z;
 
-        public TestContainer(int x, String y, byte[] z) {
+        TestContainer(int x, String y, byte[] z) {
             this.x = x;
             this.y = y;
             this.z = z;
@@ -39,7 +37,7 @@ public class EqHashTest {
 
         @Override
         public int hashCode() {
-            return Objects.hashCode( x, y, Arrays.hashCode(z));
+            return Objects.hash( x, y, Arrays.hashCode(z));
         }
         @Override
         public boolean equals( Object obj) {
@@ -53,7 +51,11 @@ public class EqHashTest {
                 return false;
             }
             TestContainer other = (TestContainer) obj;
-            return Objects.equal( x, other.x) && Objects.equal( y, other.y) && Arrays.equals( z, other.z);
+            return equal( x, other.x) && equal( y, other.y) && Arrays.equals( z, other.z);
         }
+    }
+
+    private static boolean equal(Object a, Object b) {
+        return a == b || (a != null && a.equals(b));
     }
 }
