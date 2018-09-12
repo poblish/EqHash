@@ -1,9 +1,7 @@
 EqHash
 ======
 
-[![Build Status](https://travis-ci.org/poblish/EqHash.svg?branch=master)](https://travis-ci.org/poblish/EqHash)  [![codecov.io](https://codecov.io/github/poblish/EqHash/coverage.svg?branch=master)](https://codecov.io/github/poblish/EqHash?branch=master)
-
-[![Maven Central](https://img.shields.io/maven-central/v/org.hiatusuk/eqHash.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.hiatusuk%22%20AND%20a:%22eqHash%22)
+[![Build Status](https://travis-ci.org/poblish/EqHash.svg?branch=master)](https://travis-ci.org/poblish/EqHash)  [![codecov.io](https://codecov.io/github/poblish/EqHash/coverage.svg?branch=master)](https://codecov.io/github/poblish/EqHash?branch=master) [![Maven Central](https://img.shields.io/maven-central/v/org.hiatusuk/eqHash.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.hiatusuk%22%20AND%20a:%22eqHash%22)
 
 The one Java class / method you need to test your objects' `equals()` and `hashCode()` methods.
 
